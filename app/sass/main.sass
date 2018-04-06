@@ -1,0 +1,598 @@
+@import "fonts"
+@import "libs"
+@import "vars"
+
+*
+	-webkit-box-sizing: border-box
+	-moz-box-sizing: border-box
+	box-sizing: border-box
+	&:before, &:after
+		-webkit-box-sizing: border-box
+		-moz-box-sizing: border-box
+		box-sizing: border-box
+
+*::-webkit-input-placeholder
+	color: #666
+	opacity: 1
+
+*:-moz-placeholder
+	color: #666
+	opacity: 1
+
+*::-moz-placeholder
+	color: #666
+	opacity: 1
+
+*:-ms-input-placeholder
+	color: #666
+	opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: #666
+body input:required:valid,
+body textarea:required:valid
+	color: #666
+
+html, body
+	height: 100%
+
+body
+	font-size: 14px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $default-font
+	overflow-x: hidden
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+
+.text-center
+	text-align: center
+
+h1 
+	font-size: 2.250em
+	text-align: center
+
+h2
+	font-size: 1.500em
+	text-align: center
+
+h3
+	font-size: 1.125em
+	text-align: center		
+
+p
+	font-size: 0.875em
+
+
+::selection
+	background-color: $accent
+	color: #fff
+
+.container
+	min-width: 320px	
+	max-width: 1252px
+	margin: 0 auto
+	padding: 0 40px
+
+.header
+	width: 100%
+	height: auto
+	display: flex
+	justify-content: space-between
+	padding-top: 17px
+	padding-bottom: 17px
+	border-bottom: 1px solid #eee	
+	position: relative
+	z-index: 0
+
+.time_shedule
+	padding: 0 5px
+	text-align: center
+
+.time_p
+	font-size: 1.000em
+	font-family: $default-font
+	line-height: 1.188em
+
+.time_p1
+	font-family: $default-font
+	font-weight: bold
+	line-height: 1.000em
+
+.user
+	display: flex
+	padding-top: 17px
+	padding-left: 20px
+
+.user_img
+	padding-right: 10px
+
+.user_a
+	font-family: $default-font
+	line-height: 1.000em
+	color: $dark
+	white-space: nowrap
+	&:focus
+		color: $dark
+
+
+
+.contacts
+	display: flex
+	padding: 17px 5px
+	flex-direction: column
+
+.contact_phones
+	display: flex
+	justify-content: space-between
+	align-items: center
+
+.email
+	display: flex
+	justify-content: flex-end
+	padding-bottom: 20px
+	a
+		font-size: 0.875em
+		font-family: $default-font
+		line-height: 1.000em
+		color: $dark
+		&:focus
+			color: $dark
+.fb
+	padding-right: 21px
+
+.phone_icon
+	padding-right: 10px	
+
+.phone_numbers
+	display: flex
+	position: relative
+
+.phone_main
+	padding-right: 6px
+	font-size: 1.000em
+	font-family: $default-font
+	font-weight: bold
+	line-height: 1.188em
+	color: $dark
+	white-space: nowrap
+	&:focus
+		color: $dark
+
+.operators
+	display: none
+	position: absolute
+	top: 100%
+
+	&_wrapper
+		display: flex
+		flex-direction: column
+		justify-content: flex-start
+		align-items: center
+		z-index: 1
+		background: $white
+		
+		a
+			padding: 15px
+	
+	&--footer
+		top: auto
+		bottom: 100%
+
+.opers
+	padding-right: 10px
+
+.chevron
+	width: 20px
+	height: 20px
+	border-radius: 50%
+	background: $gray
+	display: flex
+	justify-content: center
+	align-items: center
+
+	
+.fa-chevron-down
+	:before
+		color: $dark
+
+.cart
+	display: flex
+	justify-content: flex-start
+	align-items: center
+	position: relative
+
+.cart_img
+	padding-right: 17px
+
+.circle
+	width: 30px
+	height: 30px
+	border-radius: 50%	
+	background: $accent
+	position: absolute
+	top: -5px
+	right: 0
+	color: $white
+	display: flex
+	justify-content: center
+	align-items: center
+
+.top
+	width: 100%
+	height: auto
+	display: flex
+	justify-content: space-between
+	align-items: center
+
+.top1, .top2
+	width: 50%
+	display: flex
+	justify-content: space-between
+	align-items: flex-start
+
+
+//navigation
+
+
+
+//mmenu
+
+
+
+.hamburger
+	padding: 0 
+	display: none
+
+	.hamburger-box
+		width: 34px
+
+		.hamburger-inner, .hamburger-inner::after, .hamburger-inner::before
+			border-radius: 0
+			width: 34px
+			color: $dark
+			height: 2px
+
+
+
+//end mmenu
+
+
+
+
+.navigation
+	width: 100%
+	display: flex
+	justify-content: space-between
+	align-items: center
+
+.menu
+	display: block
+	width: 90%
+
+	&_wrapper
+		display: flex
+	
+		ul
+			display: flex
+			justify-content: space-between
+			padding: 0
+			width: 100%
+
+			li
+				list-style-type: none
+				a
+					color: $dark
+					font-family: $default-font
+					font-size: 1.000em
+					line-height: 1.188em
+					font-weight: bold
+					text-transform: uppercase 
+					white-space: nowrap
+
+					&:hover, &:focus, &:before
+						color: $accent
+						text-decoration: none
+						border-top: 1px solid $accent
+						padding-top: 16px	
+						&:before	
+							content: ''
+							position: absolute	
+							border-top: 1px solid $accent
+							padding-top: 16px
+					
+
+//search
+.search
+	position: relative
+
+.search_box
+	width: 50px
+	height: 30px
+	position: absolute
+
+.input	
+	position: absolute
+	top: 20px
+	right: 50px
+	box-sizing: border-box
+	width: 0
+	height: 30px
+	padding: 0 20px
+	outline: none
+	font-size: 1.125em
+	border: 1px solid $accent
+	transition: all .8s ease
+	color: $accent	
+
+//search
+.rectangle_bg
+	width: 100%
+	padding: 100px 0;
+	background-image: url(../img/main_bg.jpg)
+	background-repeat: no-repeat
+	background-size: cover
+	background-position: center
+	// background-attachment: fixed
+
+.rectangle
+	width: 100%
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: center
+	position: relative
+
+
+.rect_h1
+	color: $white
+	font-family: $default-font
+	font-weight: bold
+	line-height: 3.188em
+	margin: 0
+
+.slash
+	width: 120px
+	border-top: 2px solid $white
+
+.rect_p
+	color: $white
+	font-family: $default-font
+	font-weight: 100
+	font-size: 1.500em	
+	line-height: 1.750em
+	margin: 10px 0
+
+.rect_btn
+	background: $accent
+	color: $white
+	width: 200px
+	height: 48px
+	display: flex
+	justify-content: center
+	align-items: center
+	border-radius: 2px
+	border: none
+	&:hover
+		background: $fb
+
+
+//products
+
+.products
+	width: 100%
+	height: auto
+	display: flex
+	flex-direction: column
+	align-item: center
+
+.prod_items
+	display: flex
+	justify-content: space-between
+	flex-wrap: wrap
+.item	
+	margin-bottom: 30px
+	flex: 0 1 calc(33.3% - 30 * 3/3)
+
+.item1, .item2
+	max-width: 370px
+	height: 291px
+	display: flex
+	justify-content: space-around
+	align-items: flex-start
+	outline: 1px solid $gray
+	padding: 20px
+
+.item_ul
+	display: flex
+	flex-direction: column
+	margin: 15px 0
+	padding: 0
+	li
+		list-style-type: none
+		padding-bottom: 20px
+		font-family: $default-font
+		font-size: 0.875em
+		line-height: 1.000em
+		text-align: left
+
+.item_content, .item_content2
+	padding: 0 50px 27px 20px
+
+.item_h3
+	margin-top: 0
+
+.doube_item
+	display: flex
+	justify-content: space-between
+	align-items: flex-start	
+	padding-top: 0
+//content
+.text
+	border-bottom: 1px solid #eee
+	padding-bottom: 20px
+.txtmain_p
+	font-family: $default-font
+	font-size: 1.500em
+	line-height: 1.750em
+	text-align: center
+
+.txt_p
+	font-family: $default-font
+	font-size: 0.875em
+	line-height: 1.000em
+
+//news
+.news_list
+	padding: 20px
+	display: flex
+	flex-direction: row 
+	justify-content: space-around
+	align-items: flex-start
+
+
+.list
+	position: relative
+
+	&:hover
+		color: $accent
+		text-decoration: none
+		background: $gray
+
+		&:before
+			display: block
+
+	&:before
+		display: none
+		position: absolute
+		content: ''
+		top: 0
+		height: 1px
+		width: 100%
+		border-top: 1px solid $accent
+
+.list_date
+	font-family: $default-font
+	font-size: 0.875em
+	line-height: 1.000em
+	color: $light_grey
+	text-align: center
+
+.list_p1
+	font-family: $default-font
+	font-size: 1.000em
+	line-height: 1.188em
+	text-align: center
+
+
+.news_btn
+	text-align: center
+	padding-top: 20px
+	padding-bottom: 30px
+	
+.btn_news
+	background: transparent
+	width: 190px
+	height: 32px
+	font-family: $default-font
+	font-size: 0.875em
+	line-height: 1.000em
+	border: 1px solid $accent
+	color: $accent
+	&:focus
+		background: $accent
+		color: $white
+
+//footer
+
+
+.footer
+	width: 100%
+	height: auto
+	display: flex
+	justify-content: space-between
+	align-items: center
+	padding-bottom: 50px
+
+.copyright
+	font-family: $default-font	
+	font-size: 0.875em
+	line-height: 1.000em
+
+.time_shedule
+	display: flex
+	flex-direction: column
+	justify-content: center
+	align-items: stretch
+
+.time_p
+	font-family: $secondary-font
+	font-size: 0.875em
+	line-height: 1.313em
+	text-align: left
+	margin-top: 0
+
+.time_p1
+	font-family: $default-font
+	font-size: 0.875em
+	line-height: 1.000em
+	text-align: left
+	margin-bottom: 0
+
+.nav_footer
+	width: 25%
+	display: flex
+	justify-content: space-between
+	align-items: center
+	white-space: nowrap
+	padding: 0 10px
+
+.nav_left
+	padding: 0
+	li
+		list-style-type: none
+		padding-bottom: 10px
+		a
+			color: $dark
+			font-family: $secondary-font
+			line-height: 1.313em
+			padding-right: 10px
+			&:hover
+				color: $dark
+
+.footer_contacts
+	display: flex
+	flex-direction: column
+	justify-content: space-around
+	align-items: flex-start
+
+.foot
+	display: flex
+	padding-bottom: 10px
+
+.cont_foo_a
+	text-align: right
+
+.cont_foo
+	font-size: 0.875em
+	color: $dark
+	font-family: $secondary-font
+	line-height: 1.313em
+	&:hover
+		color: $dark
+		text-decoration: none
+
+.glyanec
+	color: $dark
+	font-family: $primary-font
+
+.glyanec_img
+	padding-right: 5px	
+
+
+@import "media" // Всегда в конце

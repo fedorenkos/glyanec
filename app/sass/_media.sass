@@ -1,0 +1,178 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+	/**/
+	.navigation
+		flex-wrap: wrap
+
+	.hamburger
+		display: block
+
+	.menu
+		display: none
+		width: 100%
+		order: 3
+
+		&_wrapper
+			justify-content: center
+			align-items: center
+			position: relative
+
+			ul
+				flex-direction: column
+				width: auto
+				margin-top: 0
+				margin-bottom: 0
+
+				li
+					padding: 5px 10px
+					font-size: 2rem
+					text-align: center
+
+					a
+						color: $accent
+
+						&:hover, &:focus
+							color: $accent
+							padding-top: 0
+							border-top: none
+							border-bottom: 1px solid $white
+	
+	.search
+		order: 2
+
+	.mfp-close-btn-in .mfp-close
+		color: $accent
+		position: absolute
+		top: -100px
+		right: 10px
+
+
+	.top
+		flex-direction: column
+
+	.top1, .top2
+		width: 100%	
+
+	.top2
+		padding-top: 30px
+
+	.prod_items
+		justify-content: center
+
+	.news_list
+		flex-wrap: wrap		
+
+	.footer
+		flex-wrap: wrap
+		justify-content: center		
+
+	.nav_footer
+		li
+			padding-right: 10px	
+
+	.top, .top1, .top2
+		flex-wrap: wrap
+		align-items: center
+		justify-content: center
+
+	.nav_footer	
+		width: 100%
+		justify-content: center
+	
+	.rect_h1
+		font-size: 1.850em
+		line-height: 2.188em
+	
+
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px)
+	/**/
+	.contacts
+		display: flex
+		justify-content: space-between
+		flex-wrap: wrap
+		flex-direction: column
+		align-items: center
+
+	.rect_h1
+		font-size: 1.550em
+		line-height: 2.188em
+		padding-bottom: 10px
+		
+	.rect_p	
+		font-size: 1.200em
+
+	.rect_btn
+		width: 150px
+		height: 48px
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 519px)
+	/**/
+	.rect_h1
+		font-size: 1.250em
+		line-height: 1.200em
+		
+	.rect_p	
+		font-size: 1.000em
+
+	.rect_btn
+		width: 150px
+		height: 38px
+.rectangle_bg
+	padding: 50px 0
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px)
+	/**/
+	.rect_h1
+		font-size: 1.000em
+		line-height: 1.000em
+		
+	.rect_p	
+		font-size: 0.875em
+
+	.rect_btn
+		width: 100px
+		height: 28px
+		font-size: 0.875em
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px)
+	/**/
+
+
+/*==========  Mobile First  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px)
+	/**/
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px)
+	/**/
+
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px)
+	/**/
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px)
+	/**/
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px)
+	/**/
+
